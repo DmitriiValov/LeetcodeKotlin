@@ -7,9 +7,10 @@ class _283 {
         fun moveZeroes(nums: IntArray): Unit {
             var zeroCount = 0
             for (i in 0 until nums.size) {
-                if (nums[i] === 0) {
+                if (nums[i] == 0) {
                     ++zeroCount
-                } else if (zeroCount > 0) {
+                }
+                else if (zeroCount > 0) {
                     nums[i - zeroCount] = nums[i]
                     nums[i] = 0
                 }
